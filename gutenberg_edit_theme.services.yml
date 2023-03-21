@@ -1,0 +1,6 @@
+services:
+  theme.negotiator.admin_theme.custom:
+    class: Drupal\gutenberg_edit_theme\Theme\CustomAdminNegotiator
+    arguments: ['@current_user', '@config.factory', '@entity_type.manager', '@router.admin_context']
+    tags:
+      - { name: theme_negotiator, priority: -39 }

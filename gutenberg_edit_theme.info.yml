@@ -1,0 +1,7 @@
+name: Gutenberg Edit Theme
+type: module
+description: Set current theme for gutenberg edit/add pages and maintain admin theme for content types that doesn&#039;t use gutenberg.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - gutenberg
