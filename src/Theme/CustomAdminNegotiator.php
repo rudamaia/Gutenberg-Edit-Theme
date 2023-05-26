@@ -20,6 +20,7 @@ class CustomAdminNegotiator extends AdminNegotiator
         $parameter = $route_match->getRawParameter('node_type');
         break;
       case 'entity.node.edit_form':
+      case 'quick_node_clone.node.quick_clone':
         $parameter = $route_match->getParameter('node');
     }
     // Use bootstrap theme for node types with gutenberg enabled.
